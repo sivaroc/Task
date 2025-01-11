@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newspaper Layout</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
+            background-color: #f5f5dc; /* Light beige for a classic newspaper feel */
+            color: #333;
+            padding: 20px;
+        }
+
+        /* Header */
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+            padding: 10px;
+            background-color: #d4af37; /* Gold header background */
+            color: white;
+            border-bottom: 5px solid #333;
+        }
+
+        .header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .header p {
+            font-size: 1.2rem;
+            font-style: italic;
+        }
+
+        /* Main Content */
+        .content {
+            display: grid;
+            grid-template-columns: 3fr 1fr; /* Main article + Sidebar */
+            gap: 20px;
+        }
+
+        /* Main Article */
+        .main-article {
+            background: white;
+            padding: 20px;
+            border: 1px solid #ddd;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .main-article h2 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+            color: #b22222; /* Dark red for headlines */
+        }
+
+        /* Columns */
+        .columns {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .columns article {
+            background: white;
+            padding: 15px;
+            border: 1px solid #ddd;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            flex: 1;
+        }
+
+        .columns article h3 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            color: #4682b4; /* Steel blue for section headings */
+        }
+
+        /* Sidebar */
+        .sidebar {
+            background: white;
+            padding: 15px;
+            border: 1px solid #ddd;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .sidebar h3 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            color: #8b4513; /* Saddle brown for sidebar headings */
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>The Daily Times</h1>
+        <p>Your Trusted Source for News</p>
+    </header>
+    <main class="content">
+        <section class="main-article">
+            <h2>Main Headline: Breaking News</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse auctor enim at justo volutpat, vel luctus est facilisis.</p>
+        </section>
+        <section class="columns">
+            <article>
+                <h3>World News</h3>
+                <p>Global events unfold as leaders meet to discuss critical issues facing the world today...</p>
+            </article>
+            <article>
+                <h3>Sports</h3>
+                <p>Local team triumphs in the championship, bringing home the coveted trophy after a nail-biting final...</p>
+            </article>
+            <article>
+                <h3>Entertainment</h3>
+                <p>Top movies of the year: a roundup of the most talked-about films and performances...</p>
+            </article>
+        </section>
+        <section class="sidebar">
+            <h3>Opinion</h3>
+            <p>Columnists share their insights on politics, culture, and more...</p>
+            <h3>Weather</h3>
+            <p>Sunny with scattered clouds, highs of 75°F (24°C) and lows of 55°F (13°C).</p>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>&copy; 2025 The Daily Times. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
